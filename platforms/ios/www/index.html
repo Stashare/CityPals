@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+    <meta charset="utf-8" />
+    <title>CityChums</title>
+    
+    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="css/city-chums.css" />
+    
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="jqm/jquery.mobile-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/dummy-contacts.js"></script>
+    <script type="text/javascript" src="js/city-chums.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    
+  </head>
+    
+  <body onload="initCityChums()">
+      
+    <div data-role="page" id="map">
+        
+      <div data-role="header">
+        <h2 style="text-align: left; margin-left: 15px;"></h2>
+        <a id="chooseCity" href="#" class="ui-btn ui-btn-right ui-icon-search ui-btn-icon-left ui-btn-icon-notext ui-corner-all" style="margin-right: 10px;">Choose City</a>
+      </div>
+      
+      <div id="mapCanvas"></div>
+        
+    </div>
+    
+    <div data-role="page" id="cities">
+        
+      <div data-role="header">
+        <h2 style="text-align: left; margin-left: 15px;">Choose a City:</h2>
+      </div>
+      
+      <div role="main" class="ui-content" id="citiesContent">
+        <ul data-role="listview" id="citiesList"></ul>
+      </div>
+        
+    </div>
+      
+  </body>
+</html>

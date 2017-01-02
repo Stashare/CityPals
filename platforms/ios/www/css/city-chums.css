@@ -1,0 +1,27 @@
+#map { height: 100%; overflow: hidden; }
+#mapCanvas { width: 100%; height: 96%; }
+
+/* iPad, landscape */
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+  #mapCanvas { height: 705px; }
+}
+
+/* iPad, portrait */
+@media only screen and (device-width: 768px) and (orientation: portrait) {
+  #mapCanvas { height: 961px; }
+}
+
+/* iPhone, landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  #mapCanvas { height: 257px; }
+}
+
+/* iPhone 4-inch, portrait */
+@media only screen and (device-height: 568px) and (orientation: portrait) {
+  #mapCanvas { height: 505px; }
+}
+
+/* iPhone 3.5-inch, portrait */
+@media only screen and (device-height: 480px) and (orientation: portrait) {
+  #mapCanvas { height: 417px; }
+}
